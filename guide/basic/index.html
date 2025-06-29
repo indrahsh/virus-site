@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Mobile Fixes -->
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Mobile Fixes -->
+    <meta name="keywords" content="app,application,code,coding,language,program,programming,script,scripting" />
+    <meta name="description" content="A Sparkling-Clean Programming Language" />
+    <title>&ndash; Virus</title>
+    <link rel="shortcut icon" href="https://indrahsh.github.io/virus-site/favicon.png">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/base.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/variables.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/layout.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/components/brand.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/components/content.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/components/navigation-error.css">
+    <link rel="stylesheet" href="https://indrahsh.github.io/virus-site/css/components/sub-navigation-error.css">
+</head>
+
+<body>
+    <div id="page">
+        <div class="vertical-spacer-2"></div>
+        <div id="brand" class="page-row">
+            <h1>Virus</h1>
+            <div class="vertical-spacer-1"></div>
+            <p>A Sparkling-Clean Programming Language</p>
+        </div>
+        <div class="vertical-spacer-2"></div>
+        <div class="page-row">
+            <ul id="navigation">
+                <li >
+                    <a href="https://indrahsh.github.io/virus-site/">Home</a>
+                </li>
+                <li >
+                    <a href="https://indrahsh.github.io/virus-site/install/download/">Install</a>
+                </li>
+                <li >
+                    <a href="https://indrahsh.github.io/virus-site/playground/">Playground</a>
+                </li>
+                <li class="active" >
+                    <a href="https://indrahsh.github.io/virus-site/guide/basic/">Guide</a>
+                </li>
+                <li >
+                    <a href="https://indrahsh.github.io/virus-site/documentation/system/">Documentation</a>
+                </li>
+            </ul>
+        </div>
+        <div class="vertical-spacer-2"></div>
+        <div class="line"></div>
+        
+        <div class="page-row media-long">
+            <div class="vertical-spacer-2"></div>
+            
+            <ul id="sub-navigation">
+                <li class="active" >
+                    <a href="https://indrahsh.github.io/virus-site/guide/basic/">Basic</a>
+                </li>
+                <li >
+                    <a href="https://indrahsh.github.io/virus-site/guide/advanced/">Advanced</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        <div class="vertical-spacer-2"></div>
+        <div id="content-and-sidebar" class="page-row">
+            
+<div id="content">
+    <div class="text-content">
+        <h1 id="basic">Basic</h1>
+<h2 id="comments">Comments</h2>
+<p>A comment.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>// A single line comment.
+</span></code></pre>
+<h2 id="values">Values</h2>
+<p>In Virus there are 8 types of value: <code>Null</code>, <code>Boolean</code>, <code>Number</code>, <code>Type</code>, <code>Object</code>, <code>String</code>, <code>Array</code>, and <code>HashTable</code>.</p>
+<h3 id="null">Null</h3>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>null
+</span></code></pre>
+<h3 id="boolean">Boolean</h3>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>false and true
+</span></code></pre>
+<h3 id="number">Number</h3>
+<p>A <code>Number</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>10
+</span><span>// 10
+</span><span>
+</span><span>-5
+</span><span>// -5
+</span><span>
+</span><span>0.5
+</span><span>// 0.5
+</span><span>
+</span><span>1 000 000
+</span><span>// 1000000
+</span></code></pre>
+<h3 id="string">String</h3>
+<p>A <code>String</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>&quot;Hello, world!&quot;
+</span><span>// Hello, world!
+</span></code></pre>
+<p>A multiline <code>String</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>string = (
+</span><span>  &quot;Hello, &quot; +
+</span><span>  &quot;world!&quot;
+</span><span>)
+</span><span>// Hello, world!
+</span></code></pre>
+<h3 id="array">Array</h3>
+<p>An <code>Array</code> is a collection of values identified by integer index. Negative indices work backwards from the end.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>array Array&lt;String&gt; = &lt;String&gt;[&quot;Foo&quot;, &quot;Bar&quot;]
+</span><span>// [&quot;Foo&quot;, &quot;Bar&quot;]
+</span><span>
+</span><span>array Array&lt;String&gt; = &lt;String&gt;[]
+</span><span>
+</span><span>array[0] = &quot;Foo&quot;
+</span><span>array[1] = &quot;Bar&quot;
+</span><span>// [&quot;Foo&quot;, &quot;Bar&quot;]
+</span></code></pre>
+<h3 id="hashtable">HashTable</h3>
+<p>A <code>HashTable</code> is a collection of key-value pairs, the key can be a <code>Boolean</code>, <code>Number</code>, <code>String</code>, <code>Type</code>, or an <code>Object</code>. <code>Array</code> and <code>HashTable</code> can't be used as keys.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>hashTable HashMap&lt;String, Number&gt; = &lt;String, Number&gt;{&quot;Foo&quot;: 1, &quot;Bar&quot;: 2}
+</span><span>// {&quot;Foo&quot;: 1, &quot;Bar&quot;: 2}
+</span><span>
+</span><span>hashTable HashMap&lt;String, Number&gt; = &lt;String, Number&gt;{}
+</span><span>
+</span><span>hashTable[&quot;Foo&quot;] = 1
+</span><span>hashTable[&quot;Bar&quot;] = 2
+</span><span>// {&quot;Foo&quot;: 1, &quot;Bar&quot;: 2}
+</span></code></pre>
+<h3 id="object">Object</h3>
+<p>Every value is an <code>Object</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>2.pow(2).pow(2)
+</span><span>// 16
+</span><span>
+</span><span>&quot;Foo Bar&quot;.Split(&quot; &quot;)
+</span><span>// [&quot;Foo&quot;, &quot;Bar&quot;]
+</span><span>
+</span><span>[1, 2].Length
+</span><span>// 2
+</span><span>
+</span><span>{&quot;Foo&quot;: 1, &quot;Bar&quot;: 2}.Length
+</span><span>// 2
+</span></code></pre>
+<h2 id="control-flow">Control Flow</h2>
+<h3 id="conditional">Conditional</h3>
+<p><code>if</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>if true
+</span><span>    ;
+</span></code></pre>
+<p><code>else</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>if false
+</span><span>    ;
+</span><span>else
+</span><span>    ;
+</span></code></pre>
+<p><code>else if</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>if false
+</span><span>    ;
+</span><span>else if false
+</span><span>    ;
+</span><span>else
+</span><span>    ;
+</span></code></pre>
+<h3 id="loops">Loops</h3>
+<p><code>while</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>count = 0
+</span><span>while count &lt; 5
+</span><span>    count += 1
+</span><span>    System.Print(count)
+</span><span>// 1, 2, 3, 4, 5
+</span></code></pre>
+<p><code>for each</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>array Array&lt;Number&gt; = &lt;Number&gt;[1, 2, 3, 4, 5]
+</span><span>for each value in array
+</span><span>    System.Print(value)
+</span><span>// 1, 2, 3, 4, 5
+</span><span>
+</span><span>for each key, value in array
+</span><span>    System.Print(&quot;%: %&quot;.Format(key, value))
+</span><span>// 0: 1, 1: 2, 2: 3, 3: 4, 4: 5
+</span></code></pre>
+<h2 id="type">Type</h2>
+<p>Defining a <code>Type</code> and its constructor method.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    ()
+</span><span>        ;
+</span></code></pre>
+<p>Instantiating a <code>Type</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>vehicle = Vehicle()
+</span><span>// Vehicle
+</span></code></pre>
+<p>Defining a property.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    _speed Number = 0
+</span><span>    ()
+</span><span>        ;
+</span><span>
+</span><span>vehicle = Vehicle()
+</span><span>vehicle.speed
+</span><span>// Error: Instance of Vehicle has no method speed.
+</span></code></pre>
+<p>Defining a setter and a getter.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    _speed Number = 0
+</span><span>    ()
+</span><span>        ;
+</span><span>    speed=(value Number)
+</span><span>        _speed = speed
+</span><span>    speed
+</span><span>        return _speed
+</span><span>
+</span><span>vehicle = Vehicle()
+</span><span>vehicle.speed
+</span><span>// 0
+</span><span>vehicle.speed = vehicle.speed + 5
+</span><span>// 5
+</span></code></pre>
+<p>Defining a method.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    _x Number = 0
+</span><span>    _y Number = 0
+</span><span>    ()
+</span><span>        ;
+</span><span>    x Number
+</span><span>        return _x
+</span><span>    y Number
+</span><span>        return _y
+</span><span>    move(x Number, y Number)
+</span><span>        _x += x
+</span><span>        _y += y
+</span><span>
+</span><span>vehicle = Vehicle()
+</span><span>vehicle.move(5, 5)
+</span><span>vehicle.x
+</span><span>// 5
+</span><span>vehicle.y
+</span><span>// 5
+</span></code></pre>
+<p>Extending a <code>Type</code>.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    _x Number = 0
+</span><span>    _y Number = 0
+</span><span>    ()
+</span><span>        ;
+</span><span>    x Number
+</span><span>        return _x
+</span><span>    y Number
+</span><span>        return _y
+</span><span>    move(x Number, y Number)
+</span><span>        _x += x
+</span><span>        _y += y
+</span><span>
+</span><span>object Carriage Vehicle
+</span><span>    ()
+</span><span>        super()
+</span><span>
+</span><span>carriage = Carriage()
+</span><span>carriage.move(5, 5)
+</span><span>carriage.x
+</span><span>// 5
+</span><span>carriage.y
+</span><span>// 5
+</span></code></pre>
+<p>The <code>super</code> keyword.</p>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>object Vehicle
+</span><span>    _x Number = 0
+</span><span>    _y Number = 0
+</span><span>    ()
+</span><span>        ;
+</span><span>    x Number
+</span><span>        return _x
+</span><span>    y Number
+</span><span>        return _y
+</span><span>    move(x Number, y Number)
+</span><span>        _x += x
+</span><span>        _y += y
+</span><span>
+</span><span>object Ship Vehicle
+</span><span>    move(x Number, y Number)
+</span><span>        return super(x, y)
+</span><span>
+</span><span>ship = Ship()
+</span><span>ship.move(5, 5)
+</span><span>ship.x
+</span><span>// 5
+</span><span>ship.y
+</span><span>// 5
+</span></code></pre>
+<h2 id="modules">Modules</h2>
+<h2 id="todo"><strong>TODO</strong></h2>
+<pre data-lang="vir" style="background-color:#2b303b;color:#c0c5ce;" class="language-vir "><code class="language-vir" data-lang="vir"><span>for Ship import Vehicles
+</span></code></pre>
+<h2 id="api">API</h2>
+<p>Store user data using <code>Virus_State_SetUserData</code>, <code>Virus_State_GetUserData</code>, <code>Virus_State_SetSlotObjectUserData</code>, and
+<code>Virus_State_GetSlotObjectUserData</code>.</p>
+<p>Bind native methods with <code>Virus_State_BindUserStaticNativeFunction</code> and <code>Virus_State_BindUserNativeFunction</code>.</p>
+<p>Creating and reading a Boolean.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotFalse</span><span>(state, </span><span style="color:#d08770;">0</span><span>);
+</span><span style="color:#b48ead;">bool</span><span> result = </span><span style="color:#bf616a;">Virus_State_GetSlotBoolean</span><span>(state, </span><span style="color:#d08770;">0</span><span>);
+</span></code></pre>
+<p>Creating and reading a Number.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">1.0</span><span>);
+</span><span style="color:#b48ead;">double</span><span> result = </span><span style="color:#bf616a;">Virus_State_GetSlotDouble</span><span>(state, </span><span style="color:#d08770;">0</span><span>, &amp;result);
+</span></code></pre>
+<p>Creating and reading a String.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNewString</span><span>(state, </span><span style="color:#d08770;">0</span><span>, &quot;</span><span style="color:#a3be8c;">Hello, world!</span><span>&quot;);
+</span><span style="color:#b48ead;">const char </span><span>*result = </span><span style="color:#bf616a;">Virus_State_GetSlotString</span><span>(state, </span><span style="color:#d08770;">0</span><span>);
+</span></code></pre>
+<p>Creating an Array.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNewArray</span><span>(state, </span><span style="color:#d08770;">0</span><span>);
+</span></code></pre>
+<p>Setting a value in an Array.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNewString</span><span>(state, </span><span style="color:#d08770;">1</span><span>, &quot;</span><span style="color:#a3be8c;">Foo</span><span>&quot;)
+</span><span style="color:#8fa1b3;">Virus_State_SetSlotArrayValue</span><span>(</span><span style="color:#bf616a;">state</span><span>, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">1</span><span>);
+</span></code></pre>
+<p>Getting a value in an Array.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_GetSlotArrayValue</span><span>(state, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">1</span><span>);
+</span><span style="color:#b48ead;">const char </span><span>*result = </span><span style="color:#bf616a;">Virus_State_GetSlotDouble</span><span>(state, </span><span style="color:#d08770;">1</span><span>);
+</span></code></pre>
+<p>Creating a HashTable.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNewHashTable</span><span>(state, </span><span style="color:#d08770;">0</span><span>);
+</span></code></pre>
+<p>Setting a value in a HashTable.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNewString</span><span>(state, </span><span style="color:#d08770;">1</span><span>, &quot;</span><span style="color:#a3be8c;">Foo</span><span>&quot;);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">1</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotHashTableValue</span><span>(state, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">2</span><span>);
+</span></code></pre>
+<p>Getting a value in a HashTable.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_GetSlotHashTableValue</span><span>(state, </span><span style="color:#d08770;">0</span><span>, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">2</span><span>);
+</span><span style="color:#b48ead;">double</span><span> result = </span><span style="color:#bf616a;">Virus_State_GetSlotDouble</span><span>(state, </span><span style="color:#d08770;">2</span><span>);
+</span></code></pre>
+<p>Getting a Type.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotModule</span><span>(state, </span><span style="color:#d08770;">0</span><span>, &quot;</span><span style="color:#a3be8c;">Math</span><span>&quot;);
+</span><span style="color:#bf616a;">Virus_State_SetSlotType</span><span>(state, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">0</span><span>, &quot;</span><span style="color:#a3be8c;">Vector3</span><span>&quot;);
+</span></code></pre>
+<p>Instantiating an Object.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotModule</span><span>(state, </span><span style="color:#d08770;">0</span><span>, &quot;</span><span style="color:#a3be8c;">Math</span><span>&quot;);
+</span><span style="color:#bf616a;">Virus_State_SetSlotType</span><span>(state, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">0</span><span>, &quot;</span><span style="color:#a3be8c;">Vector3</span><span>&quot;);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">0.0</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">3</span><span>, </span><span style="color:#d08770;">0.0</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">4</span><span>, </span><span style="color:#d08770;">0.0</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNewObject</span><span>(state, </span><span style="color:#d08770;">5</span><span>, </span><span style="color:#d08770;">1</span><span>, &quot;</span><span style="color:#a3be8c;">Vector3(Number, Number, Number)</span><span>&quot;);
+</span><span>Virus_ValueHandle *vectorObjectHandle = </span><span style="color:#bf616a;">Virus_State_CreateSlotValueHandle</span><span>(state, </span><span style="color:#d08770;">5</span><span>);
+</span></code></pre>
+<p>Calling a static method.</p>
+<pre data-lang="c" style="background-color:#2b303b;color:#c0c5ce;" class="language-c "><code class="language-c" data-lang="c"><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">1</span><span>, </span><span style="color:#d08770;">1.0</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotNumber</span><span>(state, </span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">1.0</span><span>);
+</span><span style="color:#bf616a;">Virus_State_SetSlotCallMethod</span><span>(state, </span><span style="color:#d08770;">1</span><span>, &quot;</span><span style="color:#a3be8c;">+</span><span>&quot;);
+</span><span style="color:#b48ead;">double</span><span> result = </span><span style="color:#bf616a;">Virus_State_GetSlotDouble</span><span>(state, </span><span style="color:#d08770;">1</span><span>);
+</span></code></pre>
+
+    </div>
+</div>
+<div id="sidebar" class="media-wide">
+    <ul id="sub-navigation">
+        <li class="active" >
+            <a href="https://indrahsh.github.io/virus-site/guide/basic/">Basic</a>
+        </li>
+        <li >
+            <a href="https://indrahsh.github.io/virus-site/guide/advanced/">Advanced</a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    </div>
+</body>
+
+</html>

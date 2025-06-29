@@ -1,0 +1,79 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url(//db.onlinewebfonts.com/c/4571adf8e6d8270ea61a4f43a3ef31d2?family=Departure+Mono);
+@import url(//db.onlinewebfonts.com/c/55060f0828b456a82324a0d64fa1b640?family=JetBrains+Mono);
+
+/*
+@font-face {
+  font-family: "";
+  font-style: normal;
+  font-weight: normal;
+  src: url("") format(''); // woff2, woff, truetype, opentype, embedded-opentype, svg
+}
+*/
+
+/* Variables */
+
+:root {
+    /* Global */
+    --background-color: #440044;
+    --selection-background-color: #00ff00;
+    --selection-color: #ffffff;
+    --text-color: #00ff00;
+    --text-font-family: "Departure Mono";
+    --text-font-weight: normal;
+    --text-header-font-weight: bold;
+    --text-link-color: #ffff00;
+    --text-link-hover-color: #ffffff;
+
+    /* Codes */
+    --code-background-color: #000000;
+    --code-border-color: #00ff00;
+    --code-text-color: #ffffff;
+    --code-text-font-family: "Departure Mono";
+
+    /* Layout */
+    --line-color: #00ff00;
+
+    /* Components */
+
+    /* Brand */
+    --brand-text-1-size: 4.8rem;
+    --brand-text-2-size: 1.6rem;
+
+    /* Navigation */
+    --navigation-background-color: none;
+    --navigation-border-width: 1px;
+    --navigation-border-style: solid;
+    --navigation-border-color: #00ff00;
+    --navigation-text-color: #00ff00;
+    --navigation-text-font-weight: bold;
+    --navigation-hover-background-color: #00ff00;
+    --navigation-hover-border-width: 1px;
+    --navigation-hover-border-style: none;
+    --navigation-hover-border-color: #000000;
+    --navigation-hover-text-color: #ffffff;
+    --navigation-hover-text-font-weight: bold;
+    --navigation-active-background-color: #00ff00;
+    --navigation-active-border-width: 1px;
+    --navigation-active-border-style: none;
+    --navigation-active-border-color: #000000;
+    --navigation-active-box-shadow-1-color: #ffff00;
+    --navigation-active-box-shadow-2-color: #ff00ff;
+    --navigation-active-text-color: #000000;
+    --navigation-active-text-font-weight: bold;
+    --navigation-active-text-shadow-1-color: #ffff00;
+    --navigation-active-text-shadow-2-color: #ff00ff;
+
+    /* Sub-Navigation */
+    --sub-navigation-background-color: #000000;
+    --sub-navigation-text-color: #ffff00;
+    --sub-navigation-text-font-weight: bold;
+    --sub-navigation-hover-background-color: #000000;
+    --sub-navigation-hover-text-color: #ffffff;
+    --sub-navigation-hover-text-font-weight: bold;
+    --sub-navigation-active-background-color: #000000;
+    --sub-navigation-active-text-color: #00ff00;
+    --sub-navigation-active-text-font-weight: bold;
+}

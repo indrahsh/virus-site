@@ -1,0 +1,53 @@
+ul#navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+ul#navigation>li>a,
+ul#navigation>li>a:link,
+ul#navigation>li>a:visited {
+    color: var(--navigation-text-color);
+    font-weight: var(--navigation-text-font-weight);
+    text-align: center;
+
+    /* Extra Style */
+    background: var(--navigation-background-color);
+    border-width: var(--navigation-border-width);
+    border-style: var(--navigation-border-style);
+    border-color: var(--navigation-border-color);
+    box-sizing: border-box;
+    display: block;
+    height: 5.0rem;
+    line-height: 5.0rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 20.0rem;
+}
+
+ul#navigation>li>a:hover {
+    color: var(--navigation-hover-text-color);
+    font-weight: var(--navigation-hover-text-font-weight);
+
+    /* Extra Style */
+    background: var(--navigation-hover-background-color);
+    border-width: var(--navigation-hover-border-width);
+    border-style: var(--navigation-hover-border-style);
+    border-color: var(--navigation-hover-border-color);
+    box-sizing: border-box;
+}
+
+ul#navigation>li.active>a {
+    color: var(--navigation-active-text-color);
+    font-weight: var(--navigation-active-text-font-weight);
+
+    /* Extra Style */
+    background: var(--navigation-active-background-color);
+    border-width: var(--navigation-active-border-width);
+    border-style: var(--navigation-active-border-style);
+    border-color: var(--navigation-active-border-color);
+    box-shadow: -4px -4px 0 var(--navigation-active-box-shadow-1-color), 4px 4px 0 var(--navigation-active-box-shadow-2-color);
+    box-sizing: border-box;
+    text-shadow: -2px -2px 0 var(--navigation-active-text-shadow-1-color), 2px 2px 0 var(--navigation-active-text-shadow-2-color);
+}

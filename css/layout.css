@@ -1,0 +1,142 @@
+/* Typography */
+
+html {
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+}
+
+body {
+    background: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--text-header-font-weight);
+}
+
+p,
+li {
+    font-weight: var(--text-font-weight);
+}
+
+code {
+    color: var(--code-text-color);
+    font-family: var(--code-text-font-family);
+}
+
+/* Layout */
+.text-content h1,
+.text-content h2,
+.text-content h3,
+.text-content h4,
+.text-content p,
+.text-content pre,
+.text-content ul,
+.text-content ol,
+.text-content ul>li,
+.text-content ol>li {
+    margin-top: 1.0em;
+}
+
+.text-content ul {
+    list-style-position: outside;
+    list-style-type: square;
+
+    /* Layout */
+    margin-left: 3.0em;
+}
+
+.text-content ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+
+    /* Layout */
+    margin-left: 3.0em;
+}
+
+/* Layout */
+.text-content> :first-child {
+    margin-top: 0;
+}
+
+/* Links */
+
+.text-content a,
+.text-content a:link,
+.text-content a:visited {
+    color: var(--text-link-color);
+    text-decoration: none;
+}
+
+.text-content a:hover {
+    color: var(--text-link-hover-color);
+}
+
+/* Codes */
+
+.text-content pre>code {
+    color: var(--code-text-color);
+    font-family: var(--code-text-font-family);
+
+    /* Block */
+    background-color: var(--code-background-color);
+    border: 1px solid var(--code-border-color);
+    display: block;
+    padding: 2.5rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Layout */
+
+img {
+    /* Remove whitespace underneath images */
+    vertical-align: bottom;
+}
+
+div.page-row {
+    max-width: 100.0rem;
+    margin: auto;
+    min-width: 40.0rem;
+    overflow: visible;
+    padding: 0 5.0rem;
+}
+
+div.vertical-spacer-1 {
+    padding-bottom: 2.5rem;
+}
+
+div.vertical-spacer-2 {
+    padding-bottom: 5.0rem;
+}
+
+div.line {
+    background: var(--line-color);
+    height: 1px;
+}
+
+@media (min-width: 700px) {
+
+    div.media-long {
+        display: none;
+    }
+
+    div.media-wide {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+
+    div.media-long {
+        display: block;
+    }
+
+    div.media-wide {
+        display: none;
+    }
+}

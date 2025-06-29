@@ -1,0 +1,42 @@
+ul#sub-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+}
+
+div.media-wide ul#sub-navigation {
+    flex-direction: column;
+}
+
+ul#sub-navigation>li>a,
+ul#sub-navigation>li>a:link,
+ul#sub-navigation>li>a:visited {
+    color: var(--sub-navigation-text-color);
+    font-weight: var(--sub-navigation-text-font-weight);
+
+    /* Extra Style */
+    display: block;
+    height: 5.0rem;
+    line-height: 5.0rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-underline-offset: 0.5rem;
+    width: 20.0rem;
+}
+
+ul#sub-navigation>li>a:hover {
+    color: var(--sub-navigation-hover-text-color);
+    font-weight: var(--sub-navigation-hover-text-font-weight);
+
+    /* Extra Style */
+    text-decoration: underline;
+}
+
+ul#sub-navigation>li.active>a {
+    color: var(--sub-navigation-active-text-color);
+    font-weight: var(--sub-navigation-active-text-font-weight);
+
+    /* Extra Style */
+    text-decoration: underline;
+}

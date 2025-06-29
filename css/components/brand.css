@@ -1,0 +1,13 @@
+div#brand>h1,
+div#brand>p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div#brand>h1 {
+    font-size: var(--brand-text-1-size);
+}
+
+div#brand>p {
+    font-size: var(--brand-text-2-size);
+}

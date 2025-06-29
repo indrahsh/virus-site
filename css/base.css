@@ -1,0 +1,118 @@
+/* Resets */
+
+html,
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ol,
+ul,
+li {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    line-height: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: baseline;
+    white-space: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+/* Images */
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+
+@media (min-width: 500px) {
+
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    html {
+        font-size: 8px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+code,
+li {
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 2.0rem;
+}
+
+p,
+code,
+li {
+    font-size: 1.6rem;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}

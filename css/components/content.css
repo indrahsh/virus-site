@@ -1,0 +1,15 @@
+div#content-and-sidebar {
+    display: flex;
+    gap: 5.0rem;
+}
+
+div#content-and-sidebar>div#sidebar {
+    width: 20.0rem;
+}
+
+div#content-and-sidebar>div#content {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    gap: 5.0rem;
+}
